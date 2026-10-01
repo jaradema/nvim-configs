@@ -23,6 +23,9 @@ vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Find files" })
 vim.keymap.set("n", "<leader>fg", builtin.live_grep,  { desc = "Search text" })
 vim.keymap.set("n", "<leader>fb", builtin.buffers,    { desc = "Open buffers" })
 vim.keymap.set("n", "<leader>fh", builtin.help_tags,  { desc = "Search :help" })
+vim.keymap.set("n", "<leader>gs", builtin.git_status,   { desc = "Changed files" })
+vim.keymap.set("n", "<leader>gc", builtin.git_commits,  { desc = "Commit history" })
+vim.keymap.set("n", "<leader>gb", builtin.git_branches, { desc = "Switch branch" })
 
 vim.pack.add({
   "https://github.com/MunifTanjim/nui.nvim",   -- neo-tree's UI library
